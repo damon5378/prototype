@@ -21,6 +21,37 @@
 .App__container{
   max-width: 1122px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 auto;
+}
+
+.buy{
+  color: blue;
+  font-size: 13px;
+  border-bottom: dashed;
+}
+
+@media (max-width: 767px) {
+  .App{
+    height: 100%;
+  }
+  .App__container{
+    width: 100%;
+  }
+}
+
+@media (max-width: 567px) {
+  .App__container{
+    width: 80%;
+  }
+  .App__title{
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 320px) {
+  .App__title{
+    font-size: 20px;
+  }
 }
